@@ -21,10 +21,14 @@ export const Book = ({ token }) => {
   return (
     <>
       <Link to="/">Back to All Books</Link>
-      {bookObj && (
+      {bookObj ? (
         <div className="uk-flex uk-cover-container uk-container uk-flex-column">
           <h3 className="uk-text-center uk-heading-large">{bookObj.title}</h3>
           <p>{bookObj.author}</p>
+        </div>
+      ) : (
+        <div className="uk-flex uk-cover-container uk-container uk-flex-column">
+          <h3 className="uk-text-center uk-heading-x-large">Book Not Found</h3>
         </div>
       )}
     </>
