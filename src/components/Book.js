@@ -24,7 +24,10 @@ export const Book = ({ token }) => {
       {bookObj ? (
         <div className="uk-flex uk-cover-container uk-container uk-flex-column">
           <h3 className="uk-text-center uk-heading-large">{bookObj.title}</h3>
-          <p>{bookObj.author}</p>
+          <h3 className="uk-text-center uk-text">
+            Publication date: {bookObj.publication_year}
+          </h3>
+          <p>By {bookObj.author}</p>
         </div>
       ) : (
         <div className="uk-flex uk-cover-container uk-container uk-flex-column">
