@@ -87,7 +87,6 @@ export const Booklist = ({ token }) => {
       ) : (
         <div>No results found</div>
       )}
-      <Outlet />
       {token && <BookForm token={token} setBooks={setBooks} />}
     </div>
   )

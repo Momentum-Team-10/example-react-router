@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 export const Book = ({ token }) => {
   const { bookId } = useParams()
+  console.log('CHECK OUT THE PARAMS!!', useParams())
   const [bookObj, setBookObj] = useState(null)
 
   useEffect(() => {
